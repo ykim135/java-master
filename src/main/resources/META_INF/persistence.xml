@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="<a class="vglnk" href="http://java.sun.com/xml/ns/persistence" rel="nofollow"><span>http</span><span>://</span><span>java</span><span>.</span><span>sun</span><span>.</span><span>com</span><span>/</span><span>xml</span><span>/</span><span>ns</span><span>/</span><span>persistence</span></a>"
+    xmlns:xsi="<a class="vglnk" href="http://www.w3.org/2001/XMLSchema-instance" rel="nofollow"><span>http</span><span>://</span><span>www</span><span>.</span><span>w3</span><span>.</span><span>org</span><span>/</span><span>2001</span><span>/</span><span>XMLSchema</span><span>-</span><span>instance</span></a>"
+    xsi:schemaLocation="<a class="vglnk" href="http://java.sun.com/xml/ns/persistence" rel="nofollow"><span>http</span><span>://</span><span>java</span><span>.</span><span>sun</span><span>.</span><span>com</span><span>/</span><span>xml</span><span>/</span><span>ns</span><span>/</span><span>persistence</span></a>
+             <a class="vglnk" href="http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" rel="nofollow"><span>http</span><span>://</span><span>java</span><span>.</span><span>sun</span><span>.</span><span>com</span><span>/</span><span>xml</span><span>/</span><span>ns</span><span>/</span><span>persistence</span><span>/</span><span>persistence</span><span>_</span><span>2</span><span>_</span><span>0</span><span>.</span><span>xsd</span></a>"
+    version="2.0">
+ 
+    <persistence-unit name="EmployeePU">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost/jpadb" />
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+            <property name="hibernate.connection.username" value="root" />
+            <property name="hibernate.connection.password" value="mukesh" />
+            <property name="hibernate.archive.autodetection" value="class" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+            <property name="hbm2ddl.auto" value="update" />
+        </properties>
+    </persistence-unit>
+</persistence>
